@@ -16,7 +16,7 @@ if(signupForm){
             password: inputs[2].value
         };
 
-        const response = await fetch("https://student-backend-ziqu.onrender.com/signup", {
+        const response = await fetch("https://student-login-awgr.onrender.com/signup", {
 
             method:"POST",
 
@@ -60,7 +60,7 @@ if(loginForm){
             password: inputs[1].value
         };
 
-        const response = await fetch("https://student-backend-ziqu.onrender.com/login", {
+        const response = await fetch("https://student-login-awgr.onrender.com/login", {
 
             method:"POST",
 
@@ -111,7 +111,7 @@ if(studentForm){
 
         };
 
-        const response = await fetch("https://student-backend-ziqu.onrender.com/student", {
+        const response = await fetch("https://student-login-awgr.onrender.com/student", {
 
             method:"POST",
 
