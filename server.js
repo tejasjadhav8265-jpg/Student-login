@@ -92,12 +92,13 @@ app.post("/login", async (req, res) => {
         }
 
     } catch (error) {
-        console.log(error);
-        res.status(500).json({
-            success: false,
-            message: "Error during login"
-        });
-    }
+    console.error("LOGIN ERROR:", error);
+
+    res.status(500).json({
+        success: false,
+        message: error.message
+    });
+}
 
 });
 
