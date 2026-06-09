@@ -12,12 +12,12 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGO_URL)
-    .then(() => {
-        console.log("MongoDB Connected");
-    })
-    .catch((err) => {
-        console.log(err);
-    });
+.then(() => {
+    console.log("MongoDB Connected");
+})
+.catch((err) => {
+    console.error("MONGODB ERROR:", err);
+});
 
 
 // SIGNUP API
