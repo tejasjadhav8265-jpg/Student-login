@@ -52,6 +52,10 @@ app.post("/signup", async (req, res) => {
 
     } catch (error) {
         console.log(error);
+        res.status(500).json({
+            success: false,
+            message: "Error during signup"
+        });
     }
 
 });
@@ -89,6 +93,10 @@ app.post("/login", async (req, res) => {
 
     } catch (error) {
         console.log(error);
+        res.status(500).json({
+            success: false,
+            message: "Error during login"
+        });
     }
 
 });
@@ -112,6 +120,10 @@ app.post("/student", async (req, res) => {
 
     } catch (error) {
         console.log(error);
+        res.status(500).json({
+            success: false,
+            message: "Error submitting student information"
+        });
     }
 
 });
